@@ -1,0 +1,5 @@
+Method;Approach;Model;CacheNamespace;Dev_MacroF1;Dev_WeightedF1;Test_MacroF1;Test_WeightedF1;Full_MacroF1;Full_WeightedF1;Notes
+Baseline;Zero-shot single-label prompt;meta-llama/Llama-3.3-70B-Instruct;final;0.540;0.594;0.493;0.545;0.532;0.585;"Simple baseline; deterministic, no retrieval"
+Method A (Step-Back Upgrade);Structured step-back + no-neutral escalation + light lexical guards;meta-llama/Llama-3.3-70B-Instruct;methodA_stepback_upgrade;0.521;0.543;0.620;0.581;0.542;0.551;"Two-pass: JSON first; escalate only if affect cues and not a host line"
+Method B (Combo+Calib);TF-IDF retrieval + JSON probs + prior mix + temperature scaling;meta-llama/Llama-3.3-70B-Instruct;final;0.842;0.889;0.543;0.680;0.772;0.846;k=6 retrieval (?2 per label), priors ?=0.6, neutral demotion, T?0.6
+Method C (Hybrid B?A);"Trust B when confident; if neutral/low-conf & emotional ? consult A; H?S resolver";meta-llama/Llama-3.3-70B-Instruct;final_hybridC;0.809;0.847;0.628;0.689;0.773;0.816;Gates: trust?0.62, help neutral?0.58, H?S delta?0.06

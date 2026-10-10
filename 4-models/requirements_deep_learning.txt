@@ -1,0 +1,27 @@
+# Core scientific and data libraries
+numpy==1.26.4
+pandas==2.2.2
+scikit-learn==1.5.2
+matplotlib==3.9.2
+
+# Deep learning frameworks
+tensorflow==2.16.1
+tensorflow-addons==0.23.0
+keras==3.4.1
+
+# NLP utilities
+nltk==3.9.1
+datasets==3.0.1
+kagglehub==0.2.9
+
+# Text processing and oversampling
+imbalanced-learn==0.12.3
+scipy==1.13.1
+regex==2024.9.11
+
+# TF-IDF and other preprocessing tools
+tqdm==4.66.5
+unicodedata2==15.1.0
+
+# Visualization
+seaborn==0.13.2

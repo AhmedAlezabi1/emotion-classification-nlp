@@ -1,0 +1,24 @@
+
+# Core
+numpy
+pandas
+matplotlib
+seaborn
+openpyxl
+
+# ML
+scikit-learn
+
+# Deep Learning + Transformers
+torch
+torchvision
+torchaudio
+transformers
+datasets
+accelerate
+
+# NLP utilities
+nltk
+spacy
+gensim
+textblob
